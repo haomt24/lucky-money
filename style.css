@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+}
+.app{
+    background-color: #ffd95d;
+    height: 100vh;
+}
+.wellcome{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.wellcome__button{
+    color: white;
+    background-color: #d63038;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px;
+    color: #ffd95d;
+    box-shadow: 5px 5px #aa2027;
+    margin: 10px;
+    cursor: pointer;
+}
+.wellcome__button:active{
+    box-shadow: 2px 2px #aa2027;
+    transform: translate(3px,3px);
+}
+.wellcome__content{
+    font-size: 20px;
+}
+.play {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* transform: scale(0.9); */
+}
+@media screen and (max-width: 622px){
+    .play{
+        flex-direction: column;
+    }
+    .play__info{
+        width: 90%;
+    }
+}
+@media screen and (max-width:400px){
+    .play{
+        transform: scale(0.8);
+    }
+}
+.play__info{
+    background-color: #382413;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    min-width: 200px;
+    margin: 10px;
+}
+.play__frame{
+    position: relative;
+}
+.btn {
+    /* display: inline-block; */
+    height: 60px;
+    width: 35px;
+    background: url(./img/li_xi.png),transparent;
+    background-size: 100%;
+    border: none;
+    position: absolute;
+    white-space: pre;
+    color: #382413;
+    font-weight: 900;
+    cursor: pointer;
+}
+.number-1{left: 150px;top: 50px;}
+.number-2{left: 110px;top: 80px;}
+.number-3{left: 180px;top: 70px;}
+.number-4{left: 220px;top: 50px;}
+.number-5{left: 70px;top: 100px;}
+.number-6{left: 260px;top: 100px;}
+.number-7{left: 30px;top: 140px;}
+.number-8{left: 60px;top: 180px;}
+.number-9{left: 130px;top: 160px;}
+.number-10{left: 170px;top: 140px;}
+.number-11{left: 220px;top: 120px;}
+.number-12{left: 20px;top: 200px;}
+.number-13{left: 100px;top: 220px;}
+.number-14{left: 170px;top: 210px;}
+.number-15{left: 210px;top: 190px;}
+.number-16{left: 60px;top: 260px;}
+.number-17{left: 135px;top: 240px;}
+.number-18{left: 240px;top: 260px;}
+.number-19{left: 280px;top: 250px;}
+.number-20{left: 300px;top: 190px;}
+.number-21{left: 330px;top: 170px;}
+.number-22{left: 320px;top: 260px;}
+.number-0{left: 360px;top: 230px;}
+.level-model{
+    position: absolute;
+    height: 180px;
+    background-color: white;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    z-index: 2;
+}
+.level-model__choose{
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    margin: 5px;
+}
+.level-model__choose__option{
+    height: 100px;
+    background-color: #d63038;
+    color: black;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.level-model__choose__option div {
+    background-color: white;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: #ffd95d;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.finish-model{
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    z-index: 2;
+}
+.finish-model__play-again{
+    display: block;
+    margin: 10px auto 0;
+    background-color: #d63038;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+
+}
